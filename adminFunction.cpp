@@ -1,13 +1,8 @@
-#include <string>
 #include <unistd.h>
 #include <stdio.h>
 #include <netdb.h>
-#include <sys/socket.h>
-#include <netinet/in.h>
-#include <arpa/inet.h>
 #include <fstream>
 #include <iostream>
-#include <typeinfo>
 
 void adminFunction(void) {
     system("clear");
