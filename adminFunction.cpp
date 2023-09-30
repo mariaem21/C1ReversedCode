@@ -4,6 +4,11 @@
 #include <fstream>
 #include <iostream>
 
+#include "mainMenu.cpp"
+#include "deleteData.cpp"
+#include "addData.cpp"
+#include "viewData.cpp"
+
 void adminFunction(void) {
     system("clear");
     std::cout << "\n\n\t\t\t\t\t | Logged In as Admin |\n";
@@ -45,7 +50,7 @@ void adminFunction(void) {
                     //viewData();
                     break;
                 case 5:
-                    //mainMenu();
+                    mainMenu();
                     break;
                 case 6:
                     system("clear");

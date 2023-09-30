@@ -5,6 +5,9 @@
 #include <fstream>
 #include <iostream>
 
+#include "adminVerification.cpp"
+#include "studentFunction.cpp"
+
 void mainMenu(void) {
     system("clear");
     std::cout << "\n\n\n\n\t\t\t\t\t Login As : ";
@@ -26,7 +29,7 @@ void mainMenu(void) {
     }
     if (intVar1 < 4) {
         if (intVar1 == 1) {
-            //adminVerification();
+            adminVerification();
             goto jumpPoint;
         }
         if (intVar1 == 2) {
