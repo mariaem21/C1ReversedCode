@@ -38,4 +38,3 @@ void passwordVerification(void) {
       return;
     }
   }
-}
