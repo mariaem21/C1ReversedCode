@@ -1,5 +1,4 @@
-void studentFunction()
-{
+void studentFunction(){
 
     system("clear");
 

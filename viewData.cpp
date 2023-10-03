@@ -1,6 +1,4 @@
-
-void viewData()
-{
+void viewData() {
     system("clear");
 
     fstream file("data.csv");
@@ -18,7 +16,7 @@ void viewData()
          << endl;
     string rollNumber, name, college, branch, attendance, physics, chemistry, maths;
 
-    while (!file.eof()) // file.eof() = detects as how long the f
+    while (!file.eof()) 
     {
         getline(file, rollNumber, ',');
         getline(file, name, ',');
@@ -43,4 +41,3 @@ void viewData()
     cout << " 6. Exit\n";
     cout << "\nEnter choice : ";
 }
-

@@ -1,5 +1,4 @@
-void addData()
-{
+void addData() {
     system("cls");
     fstream file("data.csv", ios::out | ios::app);
     if (!file)

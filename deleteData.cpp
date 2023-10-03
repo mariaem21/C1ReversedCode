@@ -1,5 +1,4 @@
-void deleteData()
-{
+void deleteData() {
     system("clear");
 
     // Open FIle pointers
