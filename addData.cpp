@@ -1,3 +1,10 @@
+#include addData.h
+#include adminFunction.h
+#include <string>
+#include <fstream>
+#include <iostream>
+using namespace std;
+
 void addData() {
     system("cls");
     fstream file("data.csv", ios::out | ios::app);
