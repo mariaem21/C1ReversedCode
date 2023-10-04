@@ -1,1 +1,1 @@
-std::string gass(std::string s1, char* s2);
+std::string* gass(std::string s1, char* s2);
