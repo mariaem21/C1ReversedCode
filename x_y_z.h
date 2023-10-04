@@ -1,0 +1,1 @@
+std::string* x_y_z(std::string* s1, std::string* s2);
