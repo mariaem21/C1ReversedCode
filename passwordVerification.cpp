@@ -8,7 +8,6 @@
 
 void passwordVerification(void) {
   std::string inputPassword;
-  std::string someString;
 
   system("clear");
   std::cout << "\n\n\n\n\n\t\t\t\t\t";
@@ -32,7 +31,7 @@ void passwordVerification(void) {
       exit(0);
     }
 
-    int flag = augh(someString);
+    int flag = augh(inputPassword);
     if (flag != 0) {
       mainMenu();
       return;

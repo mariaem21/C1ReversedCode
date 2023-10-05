@@ -4,10 +4,10 @@
 #include <fstream>
 #include <iostream>
 
-#include "mainMenu.cpp"
-#include "deleteData.cpp"
-#include "addData.cpp"
-#include "viewData.cpp"
+#include <mainMenu.h>
+#include <deleteData.h>
+#include <addData.h>
+#include <viewData.h>
 
 void adminFunction(void) {
     system("clear");

@@ -4,8 +4,8 @@
 #include <fstream>
 #include <iostream>
 
-#include "mainMenu.cpp"
-#include "adminFunction.cpp"
+#include <mainMenu.h>
+#include <adminFunction.h>
 
 void adminVerification(void) {
     system("clear");
