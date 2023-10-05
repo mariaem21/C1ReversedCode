@@ -89,9 +89,6 @@ void doSomething(void) {
     mix(mixVar);
     undo(undoVar);
 
-    systemCall = "Unkown?";
-    system(systemCall);
-
     char checkType = (typeid(isFive) == typeid(isFive));
     if (checkType != '\0') {
         uint reverseInt = reverse((uint)(long)(int)(ldVar1));
