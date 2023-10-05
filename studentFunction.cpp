@@ -1,3 +1,11 @@
+#include studentFunction.h
+#include mainMenu.h
+#include <string>
+#include <fstream>
+#include <iostream>
+
+using namespace std;
+
 void studentFunction(){
 
     system("clear");
