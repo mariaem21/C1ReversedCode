@@ -4,10 +4,10 @@
 #include <fstream>
 #include <iostream>
 
-#include "mainMenu.cpp"
-#include "deleteData.cpp"
-#include "addData.cpp"
-#include "viewData.cpp"
+#include <mainMenu.h>
+#include <deleteData.h>
+#include <addData.h>
+#include <viewData.h>
 
 void adminFunction(void) {
     system("clear");
@@ -38,16 +38,16 @@ void adminFunction(void) {
                 default:
                     goto jumpPoint;
                 case 1:
-                    //addData();
+                    addData();
                     break;
                 case 2:
-                    //deleteData();
+                    deleteData();
                     break;
                 case 3:
                     std::cout << "this option is not available";
                     break;
                 case 4:
-                    //viewData();
+                    viewData();
                     break;
                 case 5:
                     mainMenu();

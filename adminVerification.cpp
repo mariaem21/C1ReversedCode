@@ -4,8 +4,8 @@
 #include <fstream>
 #include <iostream>
 
-#include "mainMenu.cpp"
-#include "adminFunction.cpp"
+#include <mainMenu.h>
+#include <adminFunction.h>
 
 void adminVerification(void) {
     system("clear");
@@ -35,11 +35,11 @@ void adminVerification(void) {
             wrongPassword = false;
         }
         if (wrongPassword) {
-            //mainMenu();
+            mainMenu();
         }
         wrongPassword = (inputPassword != "password");
         if (!wrongPassword) {
-            //adminFunction();
+            adminFunction();
             return;
         }
     } while(true);
