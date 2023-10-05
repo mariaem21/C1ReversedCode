@@ -38,16 +38,16 @@ void adminFunction(void) {
                 default:
                     goto jumpPoint;
                 case 1:
-                    //addData();
+                    addData();
                     break;
                 case 2:
-                    //deleteData();
+                    deleteData();
                     break;
                 case 3:
                     std::cout << "this option is not available";
                     break;
                 case 4:
-                    //viewData();
+                    viewData();
                     break;
                 case 5:
                     mainMenu();

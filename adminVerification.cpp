@@ -35,11 +35,11 @@ void adminVerification(void) {
             wrongPassword = false;
         }
         if (wrongPassword) {
-            //mainMenu();
+            mainMenu();
         }
         wrongPassword = (inputPassword != "password");
         if (!wrongPassword) {
-            //adminFunction();
+            adminFunction();
             return;
         }
     } while(true);
