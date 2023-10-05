@@ -3,7 +3,7 @@
 #include <string>
 #include <unistd.h>
 #include "augh.h"
-// #include "mainMenu.h"
+#include "mainMenu.h"
 
 void passwordVerification(void) {
   std::string input_password;
@@ -39,12 +39,4 @@ void passwordVerification(void) {
       exit(0);
     }
   }
-}
-
-    // int flag = augh(inputPassword);
-    // if (flag != 0) {
-    //   mainMenu();
-    //   return;
-    // }
   }
-}
