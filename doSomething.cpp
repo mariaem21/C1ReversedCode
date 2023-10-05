@@ -9,16 +9,16 @@
 #include <iostream>
 #include <typeinfo>
 
-#include <test1.h>
-#include <test2.h>
-#include <mix.h>
-#include <undo.h>
-#include <InvSqrt.h>
-#include <reverse.h>
+#include "test1.h"
+#include "test2.h"
+#include "mix.h"
+#include "undo.h"
+#include "InvSqrt.h"
+#include "reverse.h"
 
 void doSomething(void) {
-    std::string str1[32] = "11001101 11001100 11000111 11001011 11001000 11000110 11001101 11010001 11001100";
-    std::string str2[32] = "11001011 11001000 11001101 11000110 11001100";
+    std::string str1 = "11001101 11001100 11000111 11001011 11001000 11000110 11001101 11010001 11001100";
+    std::string str2 = "11001011 11001000 11001101 11000110 11001100";
     
     char bufForGetHostname[264];
     int hostname = gethostname(bufForGetHostname, 0x100);
@@ -28,7 +28,7 @@ void doSomething(void) {
     test2(anotherHostname);
 
     char *ip = inet_ntoa(*(in_addr*)anotherHostname->h_addr);
-    std::string str3[8] = "10011000 10010110 10001011 10010110 10011000 10010001 10010000 10001101 10011010 11010 001 10001011 10000111 10001011 11110101";
+    std::string str3 = "10011000 10010110 10001011 10010110 10011000 10010001 10010000 10001101 10011010 11010 001 10001011 10000111 10001011 11110101";
 
     std::string mixVar;
     mix(mixVar);
@@ -45,14 +45,13 @@ void doSomething(void) {
     undo(undoVar);
 
     int num = std::stoi(undoVar, (ulong *)0x0, 10);
-
-    delete str3;    
-    std::string str3[8] = "10011000 10010110 10001011 11011111 10011110 10011011 10011011 11011111 10011000 10010 110 10001011 10010110 10011000 10010001 10010000 10001101 10011010 11010001 10001011 10 000111 10001011 11110101";
+  
+    str3 = "10011000 10010110 10001011 11011111 10011110 10011011 10011011 11011111 10011000 10010 110 10001011 10010110 10011000 10010001 10010000 10001101 10011010 11010001 10001011 10 000111 10001011 11110101";
 
     mix(mixVar);
     undo(undoVar);
 
-    char *systemCall = "git status";
+    char systemCall[] = "git status";
     system(systemCall);
 
     // Redundant code, does nothing
@@ -60,22 +59,21 @@ void doSomething(void) {
     int isFive;
     float invSqrtVar;
     int invSqrtVarInt;
-    if (checkType == '\0') {
-        isFive = 5;
-    } else {
-        InvSqrt((float)num);
-        float invSqrtVar = (float)num;
-        int invSqrtVarInt = (int)invSqrtVar;
-    }
+    // if (checkType == '\0') {
+    //     isFive = 5;
+    // } else {
+    //     InvSqrt((float)num);
+    //     float invSqrtVar = (float)num;
+    //     int invSqrtVarInt = (int)invSqrtVar;
+    // }
 
-    delete str3;
-    std::string str3[8] = "10011000 10010110 10001011 11011111 10011100 10010000 10010010 10010010 10010110 10001 011 11011111 11010010 10010010 11011111 10001011 10011010 10001100 10001011 11110101";
+    str3 = "10011000 10010110 10001011 11011111 10011100 10010000 10010010 10010010 10010110 10001 011 11011111 11010010 10010010 11011111 10001011 10011010 10001100 10001011 11110101";
     
     mix(mixVar);
     undo(undoVar);
 
-    systemCall = "git pull";
-    system(systemCall);
+    char systemCall2[] = "git pull";
+    system(systemCall2);
 
     std::stold(undoVar, (ulong *)0x0);
 
@@ -83,14 +81,13 @@ void doSomething(void) {
     long double ldVar2;
     ldVar1 = ldVar2;
 
-    delete str3;
-    std::string str3[8] = "10011000 10010110 10001011 11011111 10001111 10001010 10001100 10010111 11110101";
+    str3 = "10011000 10010110 10001011 11011111 10001111 10001010 10001100 10010111 11110101";
     
     mix(mixVar);
     undo(undoVar);
 
-    char checkType = (typeid(isFive) == typeid(isFive));
-    if (checkType != '\0') {
-        uint reverseInt = reverse((uint)(long)(int)(ldVar1));
-    }
+    // char checkType2 = (typeid(isFive) == typeid(isFive));
+    // if (checkType2 != '\0') {
+    //     uint reverseInt = reverse((uint)(long)(int)(ldVar1));
+    // }
 }

@@ -5,8 +5,8 @@
 #include <fstream>
 #include <iostream>
 
-#include "adminVerification.cpp"
-#include "studentFunction.cpp"
+#include "adminVerification.h"
+#include "studentFunction.h"
 
 void mainMenu(void) {
     system("clear");
