@@ -1,5 +1,5 @@
-#include "loadingBar.cpp"
-#include "passwordVerification.cpp"
+#include <loadingBar.cpp>
+#include <passwordVerification.cpp>
 
 int main(void) {
     loadingBar();
