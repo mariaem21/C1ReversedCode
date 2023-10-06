@@ -5,11 +5,6 @@
 #include "augh.h"
 // #include "mainMenu.h"
 
-void mainMenu() {
-  system("clear");
-  std::cout << std::endl << "Main Menu Here"  << std::endl;
-}
-
 void passwordVerification(void) {
   std::string input_password;
 
@@ -46,7 +41,10 @@ void passwordVerification(void) {
   }
 }
 
-int main(void) {
-  passwordVerification();
-  return 0;
+    // int flag = augh(inputPassword);
+    // if (flag != 0) {
+    //   mainMenu();
+    //   return;
+    // }
+  }
 }

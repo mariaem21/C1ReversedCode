@@ -2,6 +2,6 @@
 #define TEST3_H
 #include <string>
 
-void test2(char* input);
+void test3(char* input);
 
 #endif

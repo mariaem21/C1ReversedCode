@@ -1,7 +1,7 @@
 #include <cstdlib> 
 #include <iostream>
 #include <unistd.h>
-#include "doSomething.cpp"
+#include "doSomething.h"
 
 void loadingBar(void) {
     int intVar;

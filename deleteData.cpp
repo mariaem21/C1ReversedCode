@@ -1,10 +1,11 @@
-#include deleteData.h
-#include adminFunction.h
+#include "deleteData.h"
+#include "adminFunction.h"
 #include <string>
 #include <fstream>
 #include <iostream>
 #include <vector>
 #include <sstream>
+#include <unistd.h>
 using namespace std;
 
 
@@ -88,7 +89,7 @@ void deleteData() {
     // renaming the new file with the existing file name
     rename("datanew.csv", "data.csv");
 
-    Sleep(2);
+    sleep(2);
 
     adminFunction();
 }
