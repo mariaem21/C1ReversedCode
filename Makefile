@@ -1,24 +1,16 @@
-# Compiler and flags
 CXX = g++
 CXXFLAGS = -Wall -Wextra -pedantic -std=c++11
 
-# Source files
-SRCS = gass.cpp augh.cpp x_y_z.cpp passwordVerification.cpp
+SRCS := $(wildcard *.cpp)
+OBJS := $(SRCS:.cpp=.o)
 
-# Object files
-OBJS = $(SRCS:.cpp=.o)
+all: program
 
-# Executable
-EXEC = myprogram
-
-# Targets
-all: $(EXEC)
-
-$(EXEC): $(OBJS)
-	$(CXX) $(CXXFLAGS) $(OBJS) -o $(EXEC)
+program: $(OBJS)
+	$(CXX) $(CXXFLAGS) $^ -o $@
 
 %.o: %.cpp
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJS) $(EXEC)
+	rm -f program $(OBJS)

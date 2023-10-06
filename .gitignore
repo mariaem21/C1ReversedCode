@@ -4,3 +4,6 @@ test
 *.out
 *.o
 myprogram
+main
+data.csv
+gitignore.txt$*

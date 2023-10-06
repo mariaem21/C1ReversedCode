@@ -2,6 +2,6 @@
 #define UNDO_H
 #include <string>
 
-std::string* undo(std::string input);
+std::string* undo(std::string& input);
 
 #endif
