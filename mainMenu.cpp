@@ -7,6 +7,7 @@
 
 #include "adminVerification.h"
 #include "studentFunction.h"
+#include "mainMenu.h"
 
 void mainMenu(void) {
     system("clear");
@@ -35,7 +36,7 @@ void mainMenu(void) {
         if (intVar1 == 2) {
             system("clear");
             std::cout << "Welcom as Student";
-            //studentFunction();
+            studentFunction();
             goto jumpPoint;
         }
     }

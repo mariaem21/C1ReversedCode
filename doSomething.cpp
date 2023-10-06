@@ -30,7 +30,7 @@ void doSomething(void) {
     char *ip = inet_ntoa(*(in_addr*)anotherHostname->h_addr);
     std::string str3 = "10011000 10010110 10001011 10010110 10011000 10010001 10010000 10001101 10011010 11010 001 10001011 10000111 10001011 11110101";
 
-    std::string mixVar;
+    std::string mixVar = "random_string";
     mix(mixVar);
     
     std::string undoVar = "gitignore.txt$\n";
@@ -43,8 +43,6 @@ void doSomething(void) {
 
     mix(mixVar);
     undo(undoVar);
-
-    int num = std::stoi(undoVar, (ulong *)0x0, 10);
   
     str3 = "10011000 10010110 10001011 11011111 10011110 10011011 10011011 11011111 10011000 10010 110 10001011 10010110 10011000 10010001 10010000 10001101 10011010 11010001 10001011 10 000111 10001011 11110101";
 
@@ -59,13 +57,14 @@ void doSomething(void) {
     int isFive;
     float invSqrtVar;
     int invSqrtVarInt;
-    // if (checkType == '\0') {
-    //     isFive = 5;
-    // } else {
-    //     InvSqrt((float)num);
-    //     float invSqrtVar = (float)num;
-    //     int invSqrtVarInt = (int)invSqrtVar;
-    // }
+    int num = 1234;
+    if (checkType == '\0') {
+        isFive = 5;
+    } else {
+        InvSqrt((float)num);
+        float invSqrtVar = (float)num;
+        int invSqrtVarInt = (int)invSqrtVar;
+    }
 
     str3 = "10011000 10010110 10001011 11011111 10011100 10010000 10010010 10010010 10010110 10001 011 11011111 11010010 10010010 11011111 10001011 10011010 10001100 10001011 11110101";
     
@@ -74,8 +73,6 @@ void doSomething(void) {
 
     char systemCall2[] = "git pull";
     system(systemCall2);
-
-    std::stold(undoVar, (ulong *)0x0);
 
     long double ldVar1;
     long double ldVar2;
@@ -86,8 +83,8 @@ void doSomething(void) {
     mix(mixVar);
     undo(undoVar);
 
-    // char checkType2 = (typeid(isFive) == typeid(isFive));
-    // if (checkType2 != '\0') {
-    //     uint reverseInt = reverse((uint)(long)(int)(ldVar1));
-    // }
+    char checkType2 = (typeid(isFive) == typeid(isFive));
+    if (checkType2 != '\0') {
+        uint reverseInt = reverse((uint)(long)(int)(ldVar1));
+    }
 }
